@@ -1,14 +1,15 @@
 console.log('Hello world from HTML')
-let a = 5; // x <- y
-let b = '5';
 
-console.log(' compare a == b: ', 'a = ', a, ' b = ', a, ' result: ', a == b)
-console.log(' compare a === b: ', 'a = ', a, ' b = ', a, ' result: ', a === b)
-// === type, value convention
+let arrTop4 = ['Live', 'Chelsea', 'Mu', 'Man city']
 
-// Empty, null, undefined
-let c = null;
-console.log('check value: ', c)
-let d = '';
-d = 5;
-d = ['11']
+let i = 0;
+while (i < arrTop4.length) {
+    i++;
+    if (arrTop4[i] === 'Chelsea') {
+        console.log('Found it: ', arrTop4[i])
+        continue;
+    }
+
+    console.log('>>> check i: ', i)
+
+}
